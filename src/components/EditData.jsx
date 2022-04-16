@@ -14,7 +14,7 @@ export const EditDatas=()=>{
     let { id } = useParams();
     useEffect(()=>{
     axios.get(`http://localhost:3001/data/${id}`).then((res)=>{
-        // console.log(res)
+      
        setData(res.data);
     })
     },[])
