@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
        width: 53%;
        height: auto;
        margin: auto;
-       /* border: 1px solid red; */
+
        
    }
    input{

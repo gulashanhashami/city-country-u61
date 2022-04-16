@@ -29,7 +29,6 @@ import {
 th{
     font-weight: bold;
     border: 2px solid grey;
-    /* background-color: green; */
 }
 
   a{
