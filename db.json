@@ -37,12 +37,6 @@
       "id": 6
     },
     {
-      "country": "plioas",
-      "city": "plioas",
-      "population": "plioas",
-      "id": 7
-    },
-    {
       "country": "asdfg",
       "city": "Ghaziabad, up",
       "population": "12343215",
@@ -60,5 +54,6 @@
       "population": "3214567",
       "id": 10
     }
+    
   ]
 }

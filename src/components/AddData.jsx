@@ -13,11 +13,15 @@ import { Link } from "react-router-dom";
    }
    input{
        width: 40%;
-       height: 2.5vh;
+       height: 5vh;
    }
    #btn{
        width: 24%;
-       height: 3.5vh;
+       height: 6vh;
+       color: white;
+       font-weight: bold;
+       background-color: green;
+       border: 2px solid green;
    }
    p{
        font-weight: bold;
@@ -38,7 +42,7 @@ export const AddData=()=>{
    }
          return (
              <ResultDiv1>
-                 <Link to={"/"}>Go to home</Link>
+                 <Link style={{"font-weight":"bold", "fontSize":"22px"}} to={"/"}>Go to home</Link>
            <div className="formdata1">
              
              <form onSubmit={(e)=>{

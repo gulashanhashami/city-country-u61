@@ -97,25 +97,25 @@ span:hover{
       return (
         <div>
           <h1>Home Page</h1>
-          <Link to={"/add-country"}>Add a new country</Link>
-          <Link className="rt" to={"/add-city"}>Add a new city</Link>
+          <Link style={{"font-weight":"bold", "fontSize":"22px"}} to={"/add-country"}>Add a new country</Link>
+          <Link style={{"font-weight":"bold", "fontSize":"22px","marginLeft":"10px"}} className="rt" to={"/add-city"}>Add a new city</Link>
          <ResultDiv>
          
           <div className="box1">
             <h1>Data List</h1>
             <button onClick={() => {
-                 data.sort((a, b) => {
-                    return a.population - b.population;
+                 var arr=data.sort((a, b) => {
+                    return +(a.population) - (+b.population);
                   })
-                  console.log(data);
-                  // dispatch(getDataSuccess())
+                  // console.log(arr);
+                  dispatch(getDataSuccess(arr))
                 }}>Population Low to High</button>
             <button onClick={() => {
-                 data.sort((a, b) => {
+                 var arr1=data.sort((a, b) => {
                     return (+b.population) - (+a.population);
                   })
-                  console.log(data);
-                  // dispatch(getDataSuccess())
+                  // console.log(arr1);
+                  dispatch(getDataSuccess(arr1))
                 }}>Population High to Low</button>
             <table className="table" border="1">
         <thead>
